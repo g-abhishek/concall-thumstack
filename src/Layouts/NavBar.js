@@ -33,7 +33,7 @@ const styles = {
         padding: "25px 40px",
         background: "#94cbff",
         position: "absolute",
-        top: "1px",
+        top: "0px",
         left: "15px",
         borderRadius: "50%",
         opacity: "0.3",
