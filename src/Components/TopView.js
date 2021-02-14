@@ -32,7 +32,7 @@ class TopView extends Component {
                         <Grid 
                         container
                         justify="center"
-                        style={{position: "absolute", top:"70%"}}
+                        style={{position: "absolute", top:"70%", left: "0"}}
                     >
                         <Grid item xs={10} md={10} lg={7}>
                             <Card className={classes.card}>
