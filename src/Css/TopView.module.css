@@ -1,0 +1,21 @@
+.fontWeightBold{
+    font-weight: bold;
+}
+@media screen and (max-width: 700px){
+    .topView{
+        margin-bottom: 35rem !important;
+    }
+}
+@media screen and (max-width: 480px){
+    .featureItem{
+        font-size: 16px !important;
+    }
+    .featureIcon{
+        width: 30px !important;
+        height: 33px !important;
+    }
+    .featureDiv{
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+}

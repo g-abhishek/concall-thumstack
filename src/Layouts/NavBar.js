@@ -26,6 +26,10 @@ const styles = {
         background: "#EBF5FE",
         boxShadow: "none"
     },
+    toolBar: {
+        paddingTop: "5px",
+        paddingBottom: "5px",
+    },
     brandNameBox: {
         position: "relative"
     },
@@ -118,7 +122,7 @@ class NavBar extends Component {
 
         const desktop = (
             <AppBar position="static" className={classes.appBar}>
-                <Toolbar >
+                <Toolbar className={classes.toolBar}>
                     <Grid
                         container
                         direction="row"
@@ -134,7 +138,7 @@ class NavBar extends Component {
                         </Grid>
                         <Box className={classes.brandNameBox}>
                             <Box className={classes.brandNameBg}></Box>
-                            <h1 className="text-light-black">concall</h1>
+                            <h1 className="text-dark">concall</h1>
                         </Box>
 
                         <Grid>
@@ -152,7 +156,7 @@ class NavBar extends Component {
         const mobile = (
             <div>
                 <AppBar position="static" className={classes.appBar}>
-                    <Toolbar >
+                    <Toolbar className={classes.toolBar}>
                         <Grid
                             container
                             direction="row"
@@ -162,7 +166,7 @@ class NavBar extends Component {
                             
                             <Box className={classes.brandNameBox}>
                                 <Box className={classes.brandNameBg}></Box>
-                                <h1 className="text-light-black">concall</h1>
+                                <h1 className="text-dark">concall</h1>
                             </Box>
 
                             <Grid>
@@ -177,10 +181,10 @@ class NavBar extends Component {
                     <div id="bg-shadow" className={ this.state.isNavOpen ? classes.bgShadow : ""} onClick={this.closeNav}></div>
                     <div id="sideNav" className={classes.sideNav}>
                         <AppBar position="static" className={classes.appBar}>
-                                <Toolbar>
+                                <Toolbar className={classes.toolBar}>
                                     <Box className={classes.brandNameBox}>
                                         <Box className={classes.brandNameBg}></Box>
-                                        <h1 className="text-light-black">concall</h1>
+                                        <h1 className="text-dark">concall</h1>
                                     </Box>
                                 </Toolbar>
                             </AppBar>

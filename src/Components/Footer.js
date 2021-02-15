@@ -33,7 +33,19 @@ const styles = {
     link:{
         color: "white",
         textDecoration: "none"
-    }
+    },
+    container: {
+        borderBottom: "1px solid white"
+    },
+    img: {
+        width:"160px"
+    },
+    displayflex: {
+        display: "flex"
+    },
+    alignItemsBaseline: {
+        alignItems: "baseline"
+    },
 }
 
 
@@ -44,67 +56,7 @@ class Footer extends Component {
         return (
             <div>
                 <Box py={6} className={classes.root}>
-                    <Container maxWidth={"lg"}>
-                        <Box>
-                            <Grid
-                                container
-                                direction="row"
-                                justify="space-between"
-                            >
-                                <Grid mx={3} item xs={12} sm={3} md={3} lg={4} xl={4}>
-                                    <Box my={2} mx={2}>
-                                        <h1 className="mb-0">concall</h1>
-                                        <p className="small">by v7infosolutions</p>   
-                                    </Box>
-                                </Grid>
-                                <Grid mx={3} item xs={12} sm={3} md={2} lg={2} xl={2}>
-                                    <Box className="text-left" my={2} mx={2}>
-                                        <h4>Products</h4>
-                                        <p className="small mb-2"><Link className={classes.link}>Why Concall</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Meetings</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Rooms</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Tutorials</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Queries</Link></p>
-                                    </Box>
-                                </Grid>
-                                <Grid mx={3} item xs={12} sm={3} md={2} lg={2} xl={2}>
-                                    <Box className="text-left" my={2} mx={2}>
-                                        <h4>Company</h4>
-                                        <p className="small mb-2"><Link className={classes.link}>Contact Us</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>About</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Team</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Awards</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Careers</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Press Releases</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>News</Link></p>
-                                    </Box>
-                                </Grid>
-                                <Grid mx={3} item xs={12} sm={3} md={2} lg={2} xl={2}>
-                                    <Box className="text-left" my={2} mx={2}>
-                                        <h4>Helpful Links</h4>
-                                        <p className="small mb-2"><Link className={classes.link}>Downloads</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Events & Webinars</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Download Desktop App</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Download Mobile App</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Trust Center</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Numbers</Link></p>
-                                    </Box>
-                                </Grid>
-                                <Grid mx={3} item xs={12} sm={3} md={2} lg={2} xl={2}>
-                                    <Box className="text-left" my={2} mx={2}>
-                                        <h4>Support</h4>
-                                        <p className="small mb-2"><Link className={classes.link}>Getting Started</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Support Center</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Video Tutorials</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Contact Support</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Meeting Assistance</Link></p>
-                                        <p className="small mb-2"><Link className={classes.link}>Event Assistance</Link></p>
-                                    </Box>
-                                </Grid>
-                            </Grid>
-                        </Box>
-                    </Container>
-                    <Container style={{borderBottom: "1px solid white"}} maxWidth={"md"}>
+                    <Container className={classes.container} maxWidth={"lg"}>
                         <Box py={2}>
                             <Grid
                                 container
@@ -113,7 +65,7 @@ class Footer extends Component {
                                 alignItems="center"                          
                             >
                                 <Grid item md={6}>
-                                    <div className="d-flex align-items-baseline">
+                                    <div className={[classes.displayflex, classes.alignItemsBaseline]}>
                                         <h1>concall</h1>
                                         <p className="mx-1">by v7infosolutions</p>
                                     </div>
@@ -124,8 +76,8 @@ class Footer extends Component {
                                         direction="row"
                                         justify="flex-end"  
                                     >
-                                        <Grid item><img src={playstore1} style={{width:"160px"}}></img></Grid>
-                                        <Grid item><img src={appstore} style={{width:"160px"}}></img></Grid>
+                                        <Grid item><img src={playstore1} className={classes.img}></img></Grid>
+                                        <Grid item><img src={appstore} className={classes.img}></img></Grid>
 
                                     </Grid>
                                 </Grid>
@@ -137,7 +89,7 @@ class Footer extends Component {
                             
                         </Box>
                     </Container>
-                    <Container style={{borderBottom: "1px solid white"}} maxWidth={"md"}>
+                    <Container className={classes.container} maxWidth={"lg"}>
                         <Box py={2}>
                             <Grid
                                 container

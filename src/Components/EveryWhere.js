@@ -13,7 +13,19 @@ const styles = {
         border: "2px solid #5338FF",
         borderRadius: "20px",
         padding: "5px 15px"
-    }
+    },
+    heading: {
+        fontWeight: "600",
+        margin: "1rem 0"
+    },
+    subHeading: {
+        color: "#5338FF",
+        margin: "1rem 0"
+    },
+    content: {
+        fontWeight: "500",
+        margin: "0.5rem 0"
+    },
 }
 
 
@@ -23,21 +35,22 @@ class EveryWhere extends Component {
         return (
             <div>                
                 <Box py={5} className={classes.root}>
-                    <Container maxWidth="md">
+                    <Container maxWidth="lg">
+                        <div className="px-md-3">
                             <Grid
                                 container
                                 justify="flex-start"
                             >
                                 <Grid item sm={6}>
-                                    <h2 className="mb-3">Use it everywhere</h2>
-                                    <h4 className="color-purple my-2">Available as web, desktop & mobile app</h4>
-                                    <p className="my-2">Schedule, start or join HD video and audio conferences from any device or room with no friction.</p>
+                                    <h2 className={classes.heading}>Use it everywhere</h2>
+                                    <h4 className={classes.subHeading}>Available as web, desktop & mobile app</h4>
+                                    <p className={classes.content}>Schedule, start or join HD video and audio conferences from any device or room with no friction.</p>
                                     <Box py={2}>
                                         <Button className={classes.learnMoreBtn}>Get Started</Button>
                                     </Box>
                                 </Grid>
                             </Grid>
-                            
+                        </div>
                     </Container>                
                 </Box>
                 

@@ -3,41 +3,64 @@ import { withStyles } from '@material-ui/styles';
 import NavBar from '../Layouts/NavBar';
 import { Box, Card, CardContent, CardHeader, Container, Grid, Typography } from '@material-ui/core';
 import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
+import right from "../assests/right.png";
+import style from '../Css/TopView.module.css';
 
-const styles = {
+
+const styles = theme => ({
     root: {
-        backgroundColor: "#EBF5FE"
+        backgroundColor: "#EBF5FE",
+        height: "80vh", marginBottom:"25rem"
     },
     card: {
-        boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+        boxShadow: "0px 4px 84px 20px rgba(0, 0, 0, 0.05)",
+    },
+    featuresItem:{
+        fontSize: "20px",
+        paddingBottom: "3px",
+        color: "#343a40",
+        fontWeight: "500",
+    },
+    featuresIcon: {
+        width: "32px",
+        height: "37px"
+    },
+    featuresGrid: {
+        position: "absolute", 
+        top:"70%", 
+        left: "0"
+    },
+    subHeading: {
+        fontSize: "18px",
+        color: "#656BDF"
     }
-}
+})
 
 class TopView extends Component {
     render() {
         const { classes } = this.props;
         const featuresLeft = ["Secure and Encrypted", "Youtube Streaming", "Breakout Rooms", "1-on-1 Chats", "Private Chats", "Screen Sharing"]
         return (
-            <div className={classes.root}>
-                <div style={{ height: "80vh", marginBottom:"25rem" }}>
+            <div className={`${style.topView} ${classes.root}`}>
+                <div>
                     <Container maxWidth={"lg"}>
                         <Box py={10}>
-                            <h1 className="font-weight-bold">
+                            <h1 className={style.fontWeightBold}>
                                 Video Conferencing for the Digital Workplace
                             </h1>
-                            <h3 style={{ color: "#656BDF" }}>
+                            <h3 className={classes.subHeading}>
                                 Pingandtalk is all new way of video conferencing.
                             </h3>
                         </Box>
                         <Grid 
-                        container
-                        justify="center"
-                        style={{position: "absolute", top:"70%", left: "0"}}
+                            container
+                            justify="center"
+                            className={classes.featuresGrid}
                     >
                         <Grid item xs={10} md={10} lg={7}>
                             <Card className={classes.card}>
                                 <CardContent>
-                                    <Box px={3} py={4}>
+                                    <Box className={style.featureDiv} px={3} py={4}>
                                         <h2 className="text-left mb-3">Features</h2>
                                         <Grid
                                             container
@@ -54,8 +77,8 @@ class TopView extends Component {
                                                             spacing={2}
                                                         >
 
-                                                            <Grid item><CheckCircleOutlineIcon /></Grid>
-                                                            <Grid item><h3 className="features-item">{item}</h3></Grid>
+                                                            <Grid item><img src={right} className={`${style.featureIcon} ${classes.featuresIcon}`}></img></Grid>
+                                                            <Grid item><p className={`${style.featureItem} ${classes.featuresItem}`}>{item}</p></Grid>
                                                         </Grid>
                                                     )
                                                 })}
@@ -70,8 +93,8 @@ class TopView extends Component {
                                                             spacing={2}
                                                         >
 
-                                                            <Grid item><CheckCircleOutlineIcon /></Grid>
-                                                            <Grid item><h3 className="features-item">{item}</h3></Grid>
+                                                            <Grid item><img src={right} className={`${style.featureIcon} ${classes.featuresIcon}`}></img></Grid>
+                                                            <Grid item><p className={`${style.featureItem} ${classes.featuresItem}`}>{item}</p></Grid>
                                                         </Grid>
                                                     )
                                                 })}

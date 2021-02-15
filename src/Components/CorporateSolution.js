@@ -30,7 +30,12 @@ const styles = {
         border: "2px solid #5338FF",
         borderRadius: "20px",
         padding: "5px 15px"
-    }
+    },    
+    content: {
+        fontWeight: "500",
+        margin: "0.5rem 0",
+        color: "#343a40"
+    },
 }
 
 
@@ -41,8 +46,8 @@ class CorporateSolution extends Component {
         return (
             <div>
                 <Box py={6} >
-                    <h1>We provide best corporate</h1>
-                    <h1>solutions than any other company</h1>
+                    <h2>We provide best corporate</h2>
+                    <h2>solutions than any other company</h2>
                     <Box py={5}>
                         <Grid
                             container
@@ -57,7 +62,7 @@ class CorporateSolution extends Component {
                                         </Box>                                
                                     </Box>
                                     <h3 className="my-2">Highly Secure</h3>
-                                    <h5>Easy to integrate and deliver a high-quality video platform which offers full support across a wide variety of platforms.</h5>   
+                                    <p className={classes.content}>Easy to integrate and deliver a high-quality video platform which offers full support across a wide variety of platforms.</p>   
                                 </Box>
                             </Grid>
                             <Grid mx={3} item xs={12} sm={6} md={3} lg={3} xl={3}>
@@ -67,7 +72,7 @@ class CorporateSolution extends Component {
                                         </Box>                                
                                     </Box>
                                     <h3 className="my-2">End-to-end Encryption</h3>
-                                    <h5>Easy to integrate and deliver a high-quality video platform which offers full support across a wide variety of platforms.</h5>   
+                                    <p className={classes.content}>Easy to integrate and deliver a high-quality video platform which offers full support across a wide variety of platforms.</p>   
                                 </Box>
                             </Grid>
                             <Grid mx={3} item xs={12} sm={6} md={3} lg={3} xl={3}>
@@ -77,7 +82,7 @@ class CorporateSolution extends Component {
                                         </Box>                                
                                     </Box>
                                     <h3 className="my-2">Multi-Platform</h3>
-                                    <h5>Easy to integrate and deliver a high-quality video platform which offers full support across a wide variety of platforms.</h5>   
+                                    <p className={classes.content}>Easy to integrate and deliver a high-quality video platform which offers full support across a wide variety of platforms.</p>   
                                 </Box>
                             </Grid>
                         </Grid>
@@ -94,7 +99,7 @@ class CorporateSolution extends Component {
                                         </Box>                                
                                     </Box>
                                     <h3 className="my-2">End-to-end Encryption</h3>
-                                    <h5>Easy to integrate and deliver a high-quality video platform which offers full support across a wide variety of platforms.</h5>   
+                                    <p className={classes.content}>Easy to integrate and deliver a high-quality video platform which offers full support across a wide variety of platforms.</p>   
                                 </Box>
                             </Grid>
                             <Grid mx={3} item xs={12} sm={6} md={3} lg={3} xl={3}>
@@ -104,7 +109,7 @@ class CorporateSolution extends Component {
                                         </Box>                                
                                     </Box>
                                     <h3 className="my-2">Multi-Platform</h3>
-                                    <h5>Easy to integrate and deliver a high-quality video platform which offers full support across a wide variety of platforms.</h5>   
+                                    <p className={classes.content}>Easy to integrate and deliver a high-quality video platform which offers full support across a wide variety of platforms.</p>   
                                 </Box>
                             </Grid>
                         </Grid>

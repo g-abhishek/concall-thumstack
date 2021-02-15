@@ -1,0 +1,22 @@
+
+@media screen and (max-width: 959px){
+    .mainGrid{
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 576px){
+    .root{
+        padding: 20px 20px !important;
+    }
+    .img{
+        width: 270px !important;
+    }
+}
+@media screen and (max-width: 480px){
+    .root{
+        padding: 30px 20px !important;
+    }
+    .img{
+        width: 270px !important;
+    }
+}

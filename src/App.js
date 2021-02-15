@@ -6,6 +6,7 @@ import ImageView from './Components/ImageView';
 import PricingPlan from './Components/PricingPlan';
 import EveryWhere from './Components/EveryWhere';
 import CorporateSolution from './Components/CorporateSolution';
+import ScheduleMeeting from './Components/ScheduleMeeting';
 import Footer from './Components/Footer';
 import NavBar from './Layouts/NavBar';
 
@@ -17,6 +18,7 @@ function App() {
         <TopView />
         <ImageView />
         <PricingPlan />
+        <ScheduleMeeting />
         <EveryWhere />
         <CorporateSolution />
         <Footer />
