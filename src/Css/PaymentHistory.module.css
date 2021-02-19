@@ -1,0 +1,90 @@
+
+
+.vh100{
+    height: 100vh;
+}
+.dFlex{
+    display: flex;
+}
+.justifyContentCenter{
+    justify-content: center;
+}
+.alignItemsCenter{
+    align-items: center;
+}
+
+.mainDiv{
+    background-color: #EBF5FE;
+    height: 100vh;
+}
+.card{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 4px 34px -10px rgb(0 0 0 / 25%);
+}
+.cardBody{
+    padding: 2rem 2rem;
+}
+.cardFooter{
+    padding: 1rem 2rem;
+    background-color: #5C32FF;
+}
+.cardFooterBtn{
+    padding: 5px 15px !important;
+    background-color: #ffffff !important;
+    font-weight: bold !important;
+}
+.imgDiv{
+    width: 150px;
+    margin: auto;
+}
+.img{
+    width: 100%;
+}
+.textGray{
+    color: gray;
+}
+
+.pending{
+    color:#ff9800; 
+    font-weight: bold;
+    border: 2px solid #ff9800;
+    border-radius: 20px;
+    width:fit-content; 
+    padding:2px 15px;
+    width: 4rem;
+    text-align: center;
+}
+.failed{
+    color: red; 
+    font-weight: bold;
+    border: 2px solid red;
+    border-radius: 20px;
+    width:fit-content; 
+    padding:2px 15px;
+    width: 4rem;
+    text-align: center;
+}
+.paid{
+    color: #4caf50; 
+    font-weight: bold;
+    border: 2px solid #4caf50;
+    border-radius: 20px;
+    width:fit-content; 
+    padding:2px 15px;
+    width: 4rem;
+    text-align: center;
+}
+.amount{
+    color: #343a40; 
+    font-weight: bold;
+}
+.tableHeading{
+    color: gray !important; 
+    font-weight: bold !important;
+}
+.tabBtn{
+    text-transform: none !important;
+    font-weight: bold !important;
+}
+
