@@ -11,6 +11,9 @@ import Footer from './Components/Footer';
 import NavBar from './Layouts/NavBar';
 import PaymentSuccess from './Components/Payment/PaymentSuccess';
 import PaymentHistory from './Components/Payment/PaymentHistory';
+import BrowserSupportedSafari from './Components/BrowserSupported/BrowserSupportedSafari';
+import BrowserSupported from './Components/BrowserSupported/BrowserSupported';
+import PaymentFailed from './Components/Payment/PaymentFailed';
 
 function App() {
   return (
@@ -32,8 +35,17 @@ function App() {
             <Route exact path="/payment">
                 <PaymentSuccess />
             </Route>
+            <Route exact path="/failed">
+                <PaymentFailed />
+            </Route>
             <Route exact path="/history">
                 <PaymentHistory />
+            </Route>
+            <Route exact path="/safari">
+                <BrowserSupportedSafari />
+            </Route>
+            <Route exact path="/browser">
+                <BrowserSupported />
             </Route>
         </Switch>
       </BrowserRouter>
