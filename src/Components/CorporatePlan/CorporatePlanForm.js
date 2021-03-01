@@ -21,7 +21,7 @@ class CorporatePlanForm extends Component {
         return (
             <div className={style.corporatePlanDiv}>
                 <Container maxWidth="xl">
-                    <div className="py-3">
+                    <div className={style.py3}>
                         <div className={style.card}>
                             <div className={style.cardHeader}>
                                 <h3 className="mb-0">Corporate Plan</h3>
