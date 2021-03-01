@@ -1,0 +1,93 @@
+
+.corporatePlanDiv{
+    text-align: left;
+    background-color: #EBF5FE;
+}
+.vh100{
+    height: 100vh;
+}
+.dFlex{
+    display: flex;
+}
+.justifyContentCenter{
+    justify-content: center;
+}
+.alignItemsCenter{
+    align-items: center;
+}
+
+.mainDiv{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBF5FE;
+}
+.card{
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 2px 4px 34px -10px rgb(0 0 0 / 25%);
+}
+.cardHeader{
+    padding: 1rem 1rem;
+}
+.cardBody{
+    padding: 1rem 1rem;
+}
+.cardFooter{
+    padding: 1rem 1rem;
+}
+.cardFooterSubDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cardFooterBtn{
+    padding: 5px 15px !important;
+    background-color: #5C32FF !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.formControl{
+    padding: .375rem 0 .375rem .75rem;
+    font-size: 16px !important;
+    width: -webkit-fill-available;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    color: #495057;
+    height: 1.5rem;
+}
+.formControl:focus{
+    border: 1px solid #70767c;
+    outline: 0;
+}
+.textArea{
+    padding: .375rem 0 .375rem .75rem;
+    font-size: 16px !important;
+    width: -webkit-fill-available;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    color: #495057;
+}
+.textArea:focus{
+    border: 1px solid #70767c;
+    outline: 0;
+}
+
+.submitBtn{
+    width: 100% !important;
+    font-weight: bold !important;
+    background: #5C32FF !important;
+    color: white !important;
+}
+.textDanger{
+    color: red;
+    font-size: 80%;
+}
+.tableHeading{
+    color: gray !important; 
+    font-weight: bold !important;
+}

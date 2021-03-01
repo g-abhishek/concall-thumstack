@@ -14,6 +14,7 @@ import PaymentHistory from './Components/Payment/PaymentHistory';
 import BrowserSupportedSafari from './Components/BrowserSupported/BrowserSupportedSafari';
 import BrowserSupported from './Components/BrowserSupported/BrowserSupported';
 import PaymentFailed from './Components/Payment/PaymentFailed';
+import CorporatePlanForm from './Components/CorporatePlan/CorporatePlanForm';
 
 function App() {
   return (
@@ -46,6 +47,9 @@ function App() {
             </Route>
             <Route exact path="/browser">
                 <BrowserSupported />
+            </Route>
+            <Route exact path="/corporate">
+                <CorporatePlanForm />
             </Route>
         </Switch>
       </BrowserRouter>
