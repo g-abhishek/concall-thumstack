@@ -26,11 +26,20 @@
 .card{
     background-color: #ffffff;
     border-radius: 5px;
-    width: 100%;
     box-shadow: 2px 4px 34px -10px rgb(0 0 0 / 25%);
+    width: 900px;
+    margin: auto;
 }
+
+@media screen and (max-width: 996px){
+    .card{
+        width: 100% !important;
+    }
+}
+
+
 .cardHeader{
-    padding: 1rem 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 .cardBody{
     padding: 1rem 1rem;
@@ -71,6 +80,7 @@
     border: 1px solid #ced4da;
     border-radius: .25rem;
     color: #495057;
+    resize: vertical;
 }
 .textArea:focus{
     border: 1px solid #70767c;
@@ -94,3 +104,12 @@
 .py3 {
     padding-top: 1rem !important;
   }
+.mb0{
+    margin-bottom: 0;
+}
+.label{
+    margin-bottom: 5px;
+}
+.small{
+    font-size: 80%;
+}
